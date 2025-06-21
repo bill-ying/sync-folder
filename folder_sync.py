@@ -32,7 +32,8 @@ class FolderSync:
                     os.makedirs(os.path.dirname(deleted_file), exist_ok=True)
                     shutil.move(dst_file, deleted_file)
                     self.logger.info(f'Moved deleted file: {dst_file} -> {deleted_file}')
-            if root != self.target and not os.listdir(root):
+            # Only remove empty directory if it does not exist in source
+            if root != self.target and not os.listdir(root) and not os.path.exists(src_root):
                 os.rmdir(root)
                 self.logger.info(f'Removed empty directory: {root}')
 
