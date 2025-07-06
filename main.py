@@ -1,6 +1,7 @@
 import argparse
 
-from folder_sync import FolderSync, setup_logger
+from folder_sync import FolderSync
+from log import setup_logger
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='One-way sync two folders.')

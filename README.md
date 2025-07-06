@@ -6,9 +6,10 @@
 
 - One-way sync: source → target
 - Only copies files that are new or have changed (using SHA-256 hash comparison)
+- Detects file moves/renames in the source and applies them in the target without unnecessary copying
 - Moves files deleted from source to a `Deleted` folder in the target, preserving directory structure
 - Removes empty directories from the target
-- Rotating log files for sync operations
+- Rotating log files for sync operations 
 
 ## Usage
 
