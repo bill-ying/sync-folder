@@ -5,8 +5,7 @@
 ## Features
 
 - One-way sync: source → target
-- Only copies files that are new or have changed (using SHA-256 hash comparison)
-- Detects file moves/renames in the source and applies them in the target without unnecessary copying
+- Only copies files that are new or have changed (using SHA-256 hash comparison
 - Moves files deleted from source to a `Deleted` folder in the target, preserving directory structure
 - Rotating log files for sync operations 
 
