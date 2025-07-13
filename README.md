@@ -1,6 +1,6 @@
 # sync-folder
 
-**sync-folder** is a Python utility for one-way synchronization of two folders. It copies new and updated files from a source folder to a target folder. If a file is deleted from the source, it is moved (with its folder structure preserved) to a `Deleted` folder inside the target.
+**sync-folder** is a Python utility for one-way synchronization of two folders. New and updated files from a source folder are copied to a target folder. If a file is deleted from the source, it is moved (with its folder structure preserved) to a `Deleted` folder inside the target.
 
 ## Features
 
@@ -8,7 +8,6 @@
 - Only copies files that are new or have changed (using SHA-256 hash comparison)
 - Detects file moves/renames in the source and applies them in the target without unnecessary copying
 - Moves files deleted from source to a `Deleted` folder in the target, preserving directory structure
-- Removes empty directories from the target
 - Rotating log files for sync operations 
 
 ## Special Note: Network Drive Metadata Restrictions
