@@ -11,6 +11,11 @@
 - Removes empty directories from the target
 - Rotating log files for sync operations 
 
+## Special Note: Network Drive Metadata Restrictions
+
+This program is designed to work with network drives that do **not** allow copying file metadata (such as timestamps or permissions).  
+It only copies file content, ensuring compatibility with drives that restrict metadata operations.
+
 ## Usage
 
 ### Requirements
